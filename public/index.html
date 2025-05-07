@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Providence Weather Gradient</title>
+    <meta name="description" content="A simple gradient based on Providence weather">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-container" id="gradient-bg"></div>
+    
+    <div id="fish-container">
+        <img src="/api/placeholder/120/60" alt="Fish" id="fish">
+        <!-- Fish name will be dynamically added here -->
+    </div>
+    
+    <div class="weather-info">
+        <div class="location">Providence, RI</div>
+        <div class="temperature"><span id="temp">--</span>°F</div>
+        <div class="details">
+            <div class="detail-item">
+                <div class="detail-label">Wind</div>
+                <div class="detail-value"><span id="wind">--</span> mph</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">Clouds</div>
+                <div class="detail-value"><span id="clouds">--</span>%</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-label">Sea Level</div>
+                <div class="detail-value"><span id="sea-level">--</span> hPa</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
